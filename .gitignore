@@ -1,0 +1,35 @@
+# ─── Secrets (JANGAN PERNAH commit) ───
+.env
+*.env
+!.env.example
+*.key
+*.pem
+
+# ─── Data kandidat (JANGAN PERNAH commit) ───
+# Folder cv/ dan output/ berisi PDF pelamar + hasil scoring (PII).
+cv/*
+!cv/.gitkeep
+output/*
+!output/.gitkeep
+
+# Lowongan spesifik-perusahaan (opsional: commit hanya bila sudah publik)
+lowongan.txt
+
+# ─── Python ───
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# ─── OS / editor ───
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# ─── Office temp ───
+~$*.xlsx

@@ -1,0 +1,12 @@
+# CV Screening Pipeline — Dependencies (no vendor LLM SDK needed, stdlib HTTP client)
+
+# PDF extraction
+pdfplumber>=0.11.0
+pymupdf>=1.24.0          # aka fitz, fallback parser
+
+# Data + Excel export
+pandas>=2.2.0
+openpyxl>=3.1.0
+
+# Utilities
+python-dotenv>=1.0.0     # load LLM_BASE_URL / LLM_API_KEY / LLM_MODEL from .env
